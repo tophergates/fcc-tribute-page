@@ -3,7 +3,7 @@
 
   function loadDiscography() {
     // Go get the discography info
-    const getData = fetch('/discography.json')
+    const getData = fetch('./discography.json')
       .then(function(res) {
         if (res.ok) {
           return res.json();
